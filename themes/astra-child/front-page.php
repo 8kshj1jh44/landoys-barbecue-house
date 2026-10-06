@@ -56,7 +56,7 @@ get_header();
 	</section>
 
 	<!-- GALLERY -->
-	<section class="lby-gallery">
+	<section class="lby-gallery" id="gallery">
 		<h2 class="lby-gallery-title">Straight from our grill</h2>
 		<div class="lby-gallery-strip">
 			<figure><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/platter-classic.jpg' ); ?>" alt="Pork barbecue platter with calamansi and atchara" loading="lazy"><figcaption>Pork barbecue platter</figcaption></figure>
