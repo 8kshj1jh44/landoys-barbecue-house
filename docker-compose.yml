@@ -1,0 +1,33 @@
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: Landoyz
+    restart: always
+    ports:
+      - "8082:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress_password
+      WORDPRESS_DB_NAME: wordpress_site3
+    volumes:
+      - wordpress_site3_data:/var/www/html
+      - ./themes:/var/www/html/wp-content/themes
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: wordpress_db_site3
+    restart: always
+    environment:
+      MYSQL_DATABASE: wordpress_site3
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress_password
+      MYSQL_RANDOM_ROOT_PASSWORD: "1"
+    volumes:
+      - db_site3_data:/var/lib/mysql
+
+volumes:
+  wordpress_site3_data:
+  db_site3_data:
