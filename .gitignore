@@ -7,3 +7,6 @@ Thumbs.db
 .claude/
 .agents/
 agent/
+
+# Raw source photos (themed copies live in themes/astra-child/assets/img/)
+/*_n.jpg

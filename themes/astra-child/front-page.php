@@ -40,7 +40,7 @@ get_header();
 	<section class="lby-story">
 		<div class="lby-story-grid">
 			<figure class="lby-story-photo">
-				<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/story.jpg' ); ?>" alt="Char-grilled skewers fresh off the grill" loading="lazy" width="900" height="1350">
+				<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/grill-isaw.jpg' ); ?>" alt="Chicken isaw grilling over glowing charcoal" loading="lazy" width="960" height="810">
 			</figure>
 			<div class="lby-story-copy">
 				<h2>Straight from the coals to your hands.</h2>
@@ -53,6 +53,21 @@ get_header();
 	<!-- MENU -->
 	<section class="lby-menu-section" id="menu">
 		<?php echo do_shortcode( '[bbq_menu]' ); ?>
+	</section>
+
+	<!-- GALLERY -->
+	<section class="lby-gallery">
+		<h2 class="lby-gallery-title">Straight from our grill</h2>
+		<div class="lby-gallery-strip">
+			<figure><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/platter-classic.jpg' ); ?>" alt="Pork barbecue platter with calamansi and atchara" loading="lazy"><figcaption>Pork barbecue platter</figcaption></figure>
+			<figure><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/platter-sauce.jpg' ); ?>" alt="Basted barbecue skewers with sauce" loading="lazy"><figcaption>Basted and ready</figcaption></figure>
+			<figure><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/platter-feast.jpg' ); ?>" alt="Mixed barbecue platter with vegetables" loading="lazy"><figcaption>Mixed grill platter</figcaption></figure>
+			<figure><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/platter-duo.jpg' ); ?>" alt="Two barbecue platters for parties" loading="lazy"><figcaption>Party orders</figcaption></figure>
+			<figure><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/platter-party.jpg' ); ?>" alt="Large barbecue party platter" loading="lazy"><figcaption>Large platters</figcaption></figure>
+			<figure><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/grill-row.jpg' ); ?>" alt="Skewers lined up smoking on the grill" loading="lazy"><figcaption>On the grill</figcaption></figure>
+			<figure><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/tray-pork.jpg' ); ?>" alt="Braised pork party tray" loading="lazy"><figcaption>Braised pork tray</figcaption></figure>
+			<figure><img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/tray-veggies.jpg' ); ?>" alt="Chicken and vegetable party tray" loading="lazy"><figcaption>Chicken veggie tray</figcaption></figure>
+		</div>
 	</section>
 
 	<!-- HOURS & CONTACT -->

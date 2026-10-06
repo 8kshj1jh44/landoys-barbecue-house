@@ -4,7 +4,7 @@ Theme URI: https://wpastra.com/
 Description: Astra Child Theme for Custom Development
 Author: Your Name
 Template: astra
-Version: 1.1.5
+Version: 1.1.6
 Text Domain: astra-child
 */
 
@@ -493,6 +493,59 @@ body.home .custom-logo {
 .lby-menu-section {
     background: var(--bbq-surface-alt);
     padding: 80px 20px;
+}
+
+/* Gallery */
+.lby-gallery {
+    background: var(--bbq-surface-alt);
+    padding: 80px 0;
+}
+
+.lby-gallery-title {
+    text-align: center;
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--bbq-text);
+    margin: 0 0 36px;
+}
+
+.lby-gallery-strip {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 24px 12px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bbq-red) var(--bbq-surface);
+}
+
+.lby-gallery-strip figure {
+    flex: 0 0 300px;
+    margin: 0;
+    scroll-snap-align: center;
+    background: var(--bbq-surface);
+    border: 1px solid var(--bbq-border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.lby-gallery-strip img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    filter: saturate(1.05) contrast(1.05);
+}
+
+.lby-gallery-strip figcaption {
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--bbq-muted);
 }
 
 /* Hours */
