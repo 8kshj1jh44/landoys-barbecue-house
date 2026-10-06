@@ -40,7 +40,7 @@ get_header();
 	<section class="lby-story">
 		<div class="lby-story-grid">
 			<figure class="lby-story-photo">
-				<img src="https://picsum.photos/seed/charcoal-grill-smoke/900/1100" alt="Skewers smoking over hot charcoal" loading="lazy" width="900" height="1100">
+				<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/img/story.jpg' ); ?>" alt="Char-grilled skewers fresh off the grill" loading="lazy" width="900" height="1350">
 			</figure>
 			<div class="lby-story-copy">
 				<h2>Straight from the coals to your hands.</h2>
